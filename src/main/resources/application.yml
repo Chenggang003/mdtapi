@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    jndi-name: jdbc/MDTDS
+#jdbc/MDTDS
+#jdbc/softwareMICDS
+     
+#    type: org.apache.commons.dbcp.BasicDataSource
+#    jdbc/softwareMICDS
+#      data-source-jndi: java:comp/env/SoftwareMICDS
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://10.88.24.157:3306/micoasoft?rewriteBatchedStatements=true
+#    username: oa
+#    password: Mitac@123456
+
+server:
+    port: 8084
+
+mybatis:
+  type-aliases-package: web.domain
