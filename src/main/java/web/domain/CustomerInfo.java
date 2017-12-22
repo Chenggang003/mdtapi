@@ -3,6 +3,9 @@ package web.domain;
 import java.util.Date;
 
 public class CustomerInfo {
+ 
+	private String customerInfoSysId;
+
     private String customerSysId;
 
     private String firstName;
@@ -212,4 +215,14 @@ public class CustomerInfo {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
+	public String getCustomerInfoSysId() {
+		return customerInfoSysId;
+	}
+
+	public void setCustomerInfoSysId(String customerInfoSysId) {
+		this.customerInfoSysId = customerInfoSysId;
+	}
+    
+    
 }

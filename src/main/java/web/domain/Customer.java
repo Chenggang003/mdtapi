@@ -19,6 +19,13 @@ public class Customer {
 
     private Date updateTime;
 
+    private CustomerInfo customerInfo ;
+    
+    private CustomerRegisterDevice customerRegisterDevice ;
+    
+    private String region ;
+    
+    
     public String getCustomerSysId() {
         return customerSysId;
     }
@@ -57,7 +64,7 @@ public class Customer {
 
     public void setPswd(String pswd) {
         this.pswd = pswd == null ? null : pswd.trim();
-    }
+    }  
 
     public String getMobilePhone() {
         return mobilePhone;
@@ -82,4 +89,39 @@ public class Customer {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
+	public CustomerInfo getCustomerInfo() {
+		return customerInfo;
+	}
+
+	public void setCustomerInfo(CustomerInfo customerInfo) {
+		this.customerInfo = customerInfo;
+	}
+
+
+	public CustomerRegisterDevice getCustomerRegisterDevice() {
+		return customerRegisterDevice;
+	}
+
+	public void setCustomerRegisterDevice(CustomerRegisterDevice customerRegisterDevice) {
+		this.customerRegisterDevice = customerRegisterDevice;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerSysId=" + customerSysId + ", type=" + type + ", email=" + email + ", facebookId="
+				+ facebookId + ", pswd=" + pswd + ", mobilePhone=" + mobilePhone + ", creationTime=" + creationTime
+				+ ", updateTime=" + updateTime + ", customerInfo=" + customerInfo + ", customerRegisterDevice="
+				+ customerRegisterDevice + ", region=" + region + "]";
+	}
+    
+    
 }

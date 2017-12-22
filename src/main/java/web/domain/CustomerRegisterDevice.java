@@ -8,6 +8,8 @@ public class CustomerRegisterDevice {
     private String customerSysId;
 
     private String deviceSysId;
+    
+    private Integer deviceId;
 
     private String deviceName;
 
@@ -122,4 +124,23 @@ public class CustomerRegisterDevice {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
+	public Integer getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(Integer deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomerRegisterDevice [customerRegisterDeviceSysId=" + customerRegisterDeviceSysId + ", customerSysId="
+				+ customerSysId + ", deviceSysId=" + deviceSysId + ", deviceId=" + deviceId + ", deviceName="
+				+ deviceName + ", sn=" + sn + ", uuid=" + uuid + ", purchaseDate=" + purchaseDate + ", invoiceNo="
+				+ invoiceNo + ", invoiceDate=" + invoiceDate + ", status=" + status + ", creationTime=" + creationTime
+				+ ", updateTime=" + updateTime + "]";
+	}
+    
+    
 }
